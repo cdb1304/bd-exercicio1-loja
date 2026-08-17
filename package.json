@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/cdb1304/-aula-banco-de-dados-exercicio-loja-de-infor/issues"
   },
-  "homepage": "https://github.com/cdb1304/-aula-banco-de-dados-exercicio-loja-de-infor#readme"
+  "homepage": "https://github.com/cdb1304/-aula-banco-de-dados-exercicio-loja-de-infor#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.23.3"
+  }
 }
