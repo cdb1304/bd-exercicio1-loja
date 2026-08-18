@@ -23,18 +23,18 @@ CREATE TABLE pedido (
     valor_total DECIMAL(10, 2),
     id_cliente INT NOT NULL,
 
-    FOREIGN KEY (id_cliente) REFERENCES cliente(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente) ON DELETE CASCADE
 );
 
-CREATE TABLE item pedido (
-    id_item pedido INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE item_pedido (
+    id_item_pedido INT PRIMARY KEY AUTO_INCREMENT,
     id_pedido INT NOT NULL,
     id_produto INT NOT NULL,
     quantidade INT NOT NULL,
     preco_unitario DECIMAL (10, 2) NOT NULL,
 
     FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido),
-    FOREIGN KEY (id_produto) REFERENCES produto(id_produto),
+    FOREIGN KEY (id_produto) REFERENCES produto(id_produto)
 );
 
 INSERT INTO cliente (nome, email, telefone) VALUES
@@ -49,7 +49,12 @@ INSERT INTO produto (nome, descricao, preco, estoque) VALUES
 ('Monitor 24"', 'Full HD, 75Hz, painel IPS, HDMI', 699.00, 8),
 ('SSD 512GB', 'NVMe M.2, leitura 3500MB/s', 250.00, 20);
 
-INSERT INTO pedido (id_cliente, id_livro, data_pedido, quantidade) VALUES
-(1, 1, '2026-03-05', 1),
-(2, 3, '2026-03-06', 2),
-(1, 2, '2026-03-07', 1);
+INSERT INTO pedido (id_cliente, data_pedido, valor_total) VALUES
+(1, '2026-03-05', 49.90),
+(2, '2026-03-06', 500.00),
+(1, '2026-03-07', 189.90);
+
+INSERT INTO item_pedido (id_pedido, id_produto, quantidade, preco_unitario) VALUES
+(1, 1, 1, 49.90),
+(2, 3, 2, 250.00),
+(3, 2, 1, 189.90);
