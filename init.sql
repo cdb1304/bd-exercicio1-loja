@@ -9,7 +9,7 @@ CREATE TABLE cliente (
     telefone VARCHAR(20) UNIQUE NOT NULL
 );
 
-CREATE TABLE produto(
+CREATE TABLE produto (
     id_produto INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
     descricao VARCHAR(100) NOT NULL,
