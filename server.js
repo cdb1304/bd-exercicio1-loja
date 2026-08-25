@@ -24,7 +24,7 @@ import removerPedido from './rotas/removerPedido.js';
 
 // Item do pedido
 import listarItemPedido from './rotas/listarItemPedido.js';
-import buscarItemPedidoPorId from './rotas/buscarItemPedidoPorID.js';
+import buscarItemPedidoPorId from './rotas/buscarItemPedidoPorId.js';
 import cadastrarItemPedido from './rotas/cadastrarItemPedido.js';
 import atualizarItemPedido from './rotas/atualizarItemPedido.js';
 import removerItemPedido from './rotas/removerItemPedido.js';
