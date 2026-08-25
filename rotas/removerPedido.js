@@ -3,7 +3,7 @@ import bd from '../bd.js';
 export default function removerPedido(req, res) {
   const { id } = req.params;
 
-  const query = 'DELETE FROM pedido WHERE id = ?';
+  const query = 'DELETE FROM pedido WHERE id_pedido = ?';
 
   bd.query(query, [id], (erro, resultado) => {
     if (erro) 
