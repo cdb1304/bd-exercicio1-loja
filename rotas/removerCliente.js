@@ -1,9 +1,9 @@
 import bd from '../bd.js';
 
 export default function removerCliente(req, res) {
-  const { id } = req.params;
+  const { id } = req.params; // id_cliente
 
-  const query = 'DELETE FROM cliente WHERE id = ?';
+  const query = 'DELETE FROM cliente WHERE id_cliente = ?';
 
   bd.query(query, [id], (erro, resultado) => {
     if (erro) 

@@ -1,14 +1,14 @@
 import bd from '../bd.js';
 
 export default function atualizarCliente(req, res) {
-  const { id } = req.params;
+  const { id } = req.params; // id_cliente
 
   const { nome, email, telefone } = req.body;
 
   if (!nome || !email || !telefone) 
     return res.status(400).json({ msg_erro: 'Todos os campos são obrigatórios para atualização!' });
     
-  const query = 'UPDATE cliente SET nome = ?, email = ?, telefone = ? WHERE id = ?';
+  const query = 'UPDATE cliente SET nome = ?, email = ?, telefone = ? WHERE id_cliente = ?';
 
   bd.query(query, [nome, email, telefone, id], (erro, resultado) => {
     if (erro) 
@@ -19,4 +19,4 @@ export default function atualizarCliente(req, res) {
     
     res.json({ mensagem: 'Cliente atualizado!', id, nome, email, telefone });
   });
-} 
+}

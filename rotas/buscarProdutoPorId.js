@@ -1,9 +1,9 @@
 import bd from '../bd.js';
 
 export default function buscarProdutoPorId(req, res) {
-  const { id } = req.params;
+  const { id } = req.params; // id_produto
 
-  const query = 'SELECT id, nome, descricao, preco, estoque FROM produto WHERE id = ?';
+  const query = 'SELECT id_produto, nome, descricao, preco, estoque FROM produto WHERE id_produto = ?';
 
   bd.query(query, [id], (erro, resultado) => {
     if (erro) 
