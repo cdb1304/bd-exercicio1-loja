@@ -1,4 +1,4 @@
-# -aula-banco-de-dados-exercicio-loja-de-infor
+# bd-exercicio1-loja
 
 1. Corrigido atualizarCliente.js, buscarClientePorId.js, removerCliente.js, atualizarProduto.js, buscarProdutoPorId.js, removerProduto.js — usavam id em vez de id_cliente/id_produto.
 
