@@ -1,0 +1,41 @@
+{"_e":"root:init","_t":1788305731398,"format":"v0-jsonl","version":"57.0.20"}
+{"_e":"env:mode","_t":1788305731399,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1788305731402,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1788305731691,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1788305732070,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1788305732227,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\n/workspaces/bd-exercicio1-loja/node_modules/@react-native/debugger-shell/bin/react-native-devtools: error while loading shared libraries: libnspr4.so: cannot open shared object file: No such file or directory\n"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1788305732330,"plugins":[]}
+{"_e":"metro:instantiate","_t":1788305736564,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1788305739349,"id":"1","platform":"web","environment":null,"entry":"server.js"}
+{"_e":"metro:bundling:progress","_t":1788305739350,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788305739352,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788305739998,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1788305740098,"id":"1","progress":0.1296,"total":25,"current":9}
+{"_e":"metro:bundling:progress","_t":1788305740199,"id":"1","progress":0.36634349030470914,"total":38,"current":23}
+{"_e":"metro:bundling:progress","_t":1788305740306,"id":"1","progress":0.36634349030470914,"total":59,"current":28}
+{"_e":"metro:bundling:progress","_t":1788305740407,"id":"1","progress":0.36634349030470914,"total":88,"current":43}
+{"_e":"metro:bundling:progress","_t":1788305740508,"id":"1","progress":0.36634349030470914,"total":96,"current":54}
+{"_e":"metro:bundling:progress","_t":1788305740610,"id":"1","progress":0.36634349030470914,"total":114,"current":69}
+{"_e":"metro:bundling:progress","_t":1788305740724,"id":"1","progress":0.4235323759133283,"total":126,"current":82}
+{"_e":"metro:bundling:progress","_t":1788305740829,"id":"1","progress":0.5482780723734049,"total":131,"current":97}
+{"_e":"metro:bundling:progress","_t":1788305740929,"id":"1","progress":0.608621296715457,"total":141,"current":110}
+{"_e":"metro:bundling:progress","_t":1788305741030,"id":"1","progress":0.6925814152515652,"total":149,"current":124}
+{"_e":"metro:bundling:progress","_t":1788305741132,"id":"1","progress":0.6925814152515652,"total":184,"current":134}
+{"_e":"metro:bundling:progress","_t":1788305741255,"id":"1","progress":0.6925814152515652,"total":184,"current":135}
+{"_e":"metro:bundling:progress","_t":1788305741355,"id":"1","progress":0.6925814152515652,"total":202,"current":148}
+{"_e":"metro:bundling:progress","_t":1788305741457,"id":"1","progress":0.6925814152515652,"total":216,"current":168}
+{"_e":"metro:bundling:progress","_t":1788305741561,"id":"1","progress":0.6925814152515652,"total":217,"current":180}
+{"_e":"metro:bundling:progress","_t":1788305741663,"id":"1","progress":0.7079702691688176,"total":227,"current":191}
+{"_e":"metro:bundling:progress","_t":1788305741766,"id":"1","progress":0.856436595875654,"total":228,"current":211}
+{"_e":"metro:bundling:progress","_t":1788305741866,"id":"1","progress":0.9405655469678954,"total":232,"current":225}
+{"_e":"metro:bundling:failed","_t":1788305741947,"id":"1","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /workspaces/bd-exercicio1-loja/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1788305748570,"id":"3","platform":"web","environment":null,"entry":"server.js"}
+{"_e":"metro:bundling:progress","_t":1788305748571,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788305748572,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788305748672,"id":"3","progress":0.8128371256742513,"total":254,"current":229}
+{"_e":"metro:bundling:failed","_t":1788305748680,"id":"3","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /workspaces/bd-exercicio1-loja/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1788305749403,"id":"5","platform":"web","environment":null,"entry":"server.js"}
+{"_e":"metro:bundling:progress","_t":1788305749403,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1788305749405,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1788305749491,"id":"5","message":"Package subpath './rn-get-polyfills' is not defined by \"exports\" in /workspaces/bd-exercicio1-loja/node_modules/react-native/package.json","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"env:mode","_t":1788305807505,"nodeEnv":"development","babelEnv":"development","mode":"development"}
