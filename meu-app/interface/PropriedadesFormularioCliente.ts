@@ -1,4 +1,4 @@
-import { InterfaceCliente } from '../interface/InterfaceCliente';
+import { InterfaceCliente } from './InterfaceCliente';
 
 export interface PropriedadesFormulario {
     nome: string;

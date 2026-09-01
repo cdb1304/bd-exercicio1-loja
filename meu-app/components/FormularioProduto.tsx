@@ -1,34 +1,39 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-import { PropriedadesFormulario } from '../interface/PropriedadesFormularioCliente';
-import { InterfaceCliente } from '../interface/InterfaceCliente';
+import { PropriedadesFormularioProduto } from '../interface/PropriedadesFormularioProduto';
+import { InterfaceProduto } from '../interface/InterfaceProduto';
 
-export default function FormularioCliente(props: PropriedadesFormulario) {
+export default function FormularioProduto(props: PropriedadesFormularioProduto) {
    return (
       <View style={[estilos.formulario, props.idEdicao !== undefined && estilos.formularioEdicao]}>
          <Text style={estilos.formularioTitulo}>
-            {props.idEdicao !== undefined ? 'Editando Registro' : 'Novo Cliente'}
+            {props.idEdicao !== undefined ? 'Editando Produto' : 'Novo Produto'}
          </Text>
 
          <TextInput
             style={estilos.entradaTexto}
-            placeholder="Nome do Cliente"
+            placeholder="Nome do Produto"
             value={props.nome}
             onChangeText={props.setNome}
          />
          <TextInput
             style={estilos.entradaTexto}
-            placeholder="E-mail"
-            keyboardType="email-address"
-            autoCapitalize="none"
-            value={props.email}
-            onChangeText={props.setEmail}
+            placeholder="Descrição"
+            value={props.descricao}
+            onChangeText={props.setDescricao}
          />
          <TextInput
             style={estilos.entradaTexto}
-            placeholder="Telefone"
-            keyboardType="phone-pad"
-            value={props.telefone}
-            onChangeText={props.setTelefone}
+            placeholder="Preço (ex: 99.90)"
+            keyboardType="numeric"
+            value={props.preco}
+            onChangeText={props.setPreco}
+         />
+         <TextInput
+            style={estilos.entradaTexto}
+            placeholder="Quantidade em Estoque"
+            keyboardType="numeric"
+            value={props.estoque}
+            onChangeText={props.setEstoque}
          />
 
          <View style={estilos.fileiraAcoes}>
@@ -37,13 +42,14 @@ export default function FormularioCliente(props: PropriedadesFormulario) {
                   ? estilos.botaoLaranja
                   : estilos.botaoVerde]}
                onPress={() => {
-                  const cliente: InterfaceCliente = {
-                     id: props.idEdicao,
+                  const produto: InterfaceProduto = {
+                     id_produto: props.idEdicao,
                      nome: props.nome,
-                     email: props.email,
-                     telefone: props.telefone
+                     descricao: props.descricao,
+                     preco: Number(props.preco),
+                     estoque: Number(props.estoque)
                   };
-                  props.salvarDados(props.idEdicao, cliente);
+                  props.salvarDados(props.idEdicao, produto);
                }}
             >
                <Text style={estilos.botaoTexto}>
